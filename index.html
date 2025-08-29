@@ -1,92 +1,100 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Fundamentals Mastery</title>
     <link rel="stylesheet" href="style.css" />
-    </head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1>🚀 JavaScript Fundamentals Mastery</h1>
-            <p>Interactive demonstration of JavaScript concepts</p>
+      <div class="header">
+        <h1>🚀 JavaScript Fundamentals Mastery</h1>
+        <p>Interactive demonstration of JavaScript concepts</p>
+      </div>
+
+      <div class="content">
+        <!-- Part 1: JavaScript Basics -->
+        <div class="section part1">
+          <h2>🎯 Part 1: JavaScript Basics</h2>
+          <p>Variables, data types, operators, and conditionals in action:</p>
+
+          <div>
+            <input type="text" id="userName" placeholder="Enter your name" />
+            <input type="number" id="userAge" placeholder="Enter your age" />
+            <button onclick="analyzeUser()">Analyze User</button>
+          </div>
+
+          <div class="output" id="userAnalysis"></div>
         </div>
-        
-        <div class="content">
-            <!-- Part 1: JavaScript Basics -->
-            <div class="section part1">
-                <h2>🎯 Part 1: JavaScript Basics</h2>
-                <p>Variables, data types, operators, and conditionals in action:</p>
-                
-                <div>
-                    <input type="text" id="userName" placeholder="Enter your name">
-                    <input type="number" id="userAge" placeholder="Enter your age">
-                    <button onclick="analyzeUser()">Analyze User</button>
-                </div>
-                
-                <div class="output" id="userAnalysis"></div>
-            </div>
 
-            <!-- Part 2: Functions -->
-            <div class="section part2">
-                <h2>❤️ Part 2: JavaScript Functions</h2>
-                <p>Reusable functions for common tasks:</p>
-                
-                <div>
-                    <input type="number" id="num1" placeholder="First number">
-                    <input type="number" id="num2" placeholder="Second number">
-                    <button onclick="performCalculations()">Calculate</button>
-                </div>
-                
-                <div>
-                    <input type="text" id="textToFormat" placeholder="Enter text to format">
-                    <button onclick="formatText()">Format Text</button>
-                </div>
-                
-                <div class="output" id="functionResults"></div>
-            </div>
+        <!-- Part 2: Functions -->
+        <div class="section part2">
+          <h2>❤️ Part 2: JavaScript Functions</h2>
+          <p>Reusable functions for common tasks:</p>
 
-            <!-- Part 3: Loops -->
-            <div class="section part3">
-                <h2>🔁 Part 3: JavaScript Loops</h2>
-                <p>Demonstrating different loop types:</p>
-                
-                <div>
-                    <input type="number" id="loopCount" placeholder="How many items?" value="10">
-                    <button onclick="generateNumbers()">Generate Numbers (for loop)</button>
-                    <button onclick="createPattern()">Create Pattern (while loop)</button>
-                    <button onclick="startCountdown()">Start Countdown</button>
-                </div>
-                
-                <div class="loop-display" id="loopDisplay"></div>
-                <div class="countdown" id="countdownDisplay"></div>
-            </div>
+          <div>
+            <input type="number" id="num1" placeholder="First number" />
+            <input type="number" id="num2" placeholder="Second number" />
+            <button onclick="performCalculations()">Calculate</button>
+          </div>
 
-            <!-- Part 4: DOM Manipulation -->
-            <div class="section part4">
-                <h2>🌐 Part 4: DOM Manipulation</h2>
-                <p>Interactive DOM elements:</p>
-                
-                <div>
-                    <button onclick="addNewItem()">Add New Item</button>
-                    <button onclick="toggleAllItems()">Toggle All Colors</button>
-                    <button onclick="clearAllItems()">Clear All Items</button>
-                </div>
-                
-                <div id="dynamicContent"></div>
-                 <h3>Interactive Task List:</h3>
-                <input type="text" id="newTask" placeholder="Enter a new task">
-                <button onclick="addTask()">Add Task</button>
-                <ul class="task-list" id="taskList"></ul>
-            </div>
+          <div>
+            <input
+              type="text"
+              id="textToFormat"
+              placeholder="Enter text to format"
+            />
+            <button onclick="formatText()">Format Text</button>
+          </div>
+
+          <div class="output" id="functionResults"></div>
         </div>
+
+        <!-- Part 3: Loops -->
+        <div class="section part3">
+          <h2>🔁 Part 3: JavaScript Loops</h2>
+          <p>Demonstrating different loop types:</p>
+
+          <div>
+            <input
+              type="number"
+              id="loopCount"
+              placeholder="How many items?"
+              value="10"
+            />
+            <button onclick="generateNumbers()">
+              Generate Numbers (for loop)
+            </button>
+            <button onclick="createPattern()">
+              Create Pattern (while loop)
+            </button>
+            <button onclick="startCountdown()">Start Countdown</button>
+          </div>
+
+          <div class="loop-display" id="loopDisplay"></div>
+          <div class="countdown" id="countdownDisplay"></div>
+        </div>
+
+        <!-- Part 4: DOM Manipulation -->
+        <div class="section part4">
+          <h2>🌐 Part 4: DOM Manipulation</h2>
+          <p>Interactive DOM elements:</p>
+
+          <div>
+            <button onclick="addNewItem()">Add New Item</button>
+            <button onclick="toggleAllItems()">Toggle All Colors</button>
+            <button onclick="clearAllItems()">Clear All Items</button>
+          </div>
+
+          <div id="dynamicContent"></div>
+          <h3>Interactive Task List:</h3>
+          <input type="text" id="newTask" placeholder="Enter a new task" />
+          <button onclick="addTask()">Add Task</button>
+          <ul class="task-list" id="taskList"></ul>
+        </div>
+      </div>
     </div>
-            </div>
-        </div>
-        <script src="script.js"></script>
-            </body>
-            </html>
-              
-                
-               
+    <script src="script.js"></script>
+  </body>
+</html>
